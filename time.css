@@ -1,0 +1,113 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: "Georgia", serif;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.timeline-labels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.left-label,
+.right-label {
+  color: #ccc;
+  font-size: 14px;
+  width: 40px;
+}
+
+.timeline {
+  flex: 1;
+  min-height: 240px;
+  border-top: 2px dashed #666;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card-pool {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.card {
+  width: 180px;
+  height: 260px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+  cursor: grab;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+} */
+
+.card img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.card[data-placed="true"] {
+  cursor: default;
+  opacity: 0.95;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.lives {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
