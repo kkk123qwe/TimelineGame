@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Timeline Game</title>
+    <link rel="stylesheet" href="time.css" />
+  </head>
+  <body>
+    <h1>Can you sort them by creation time?</h1>
+    <div class="lives" id="lives">❤️❤️❤️</div>
+    <div class="timeline-labels">
+      <span class="left-label">c. 400 BC</span>
+      <div class="timeline" id="timeline"></div>
+      <span class="right-label">2016 AD</span>
+    </div>
+
+    <div class="card-pool" id="cardPool"></div>
+
+    <div class="buttons">
+      <button onclick="checkOrder()">Check Order</button>
+      <button onclick="restartGame()">Restart</button>
+    </div>
+
+    <script src="time.js"></script>
+  </body>
+</html>
